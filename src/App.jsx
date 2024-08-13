@@ -7,20 +7,19 @@ function App() {
   const [calval, setCalval] = useState("");
   const onbuttonClick = (buttonText) => {
     if (buttonText === "C") {
-     setCalval("");
-    } 
-    else if (buttonText === "=") {
-      const result =eval(calval);
+      setCalval("");
+    } else if (buttonText === "=") {
+      const result = eval(calval);
       setCalval(result);
-    
-    }
-     else {
+    } else {
       const newDisplayvalue = calval + buttonText;
       setCalval(newDisplayvalue);
     }
   };
   return (
     <>
+      <h1 className={styles.Heading}>Calculator app</h1>
+
       <Container>
         <div className={styles.calculator}>
           <Display displayvalue={calval}></Display>

@@ -3,3 +3,12 @@
   width: 200px;
   border-radius: 5px;
 }
+
+.Heading {
+  /* margin-left: 507px; */
+  margin-top: 16px;
+  text-align: center;
+}
+.content{
+  background-color: aqua;
+}
